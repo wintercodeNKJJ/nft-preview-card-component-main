@@ -1,0 +1,130 @@
+@font-face {
+  font-family: outfit;
+  src: url('./Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: outfit;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main{
+  width: 300px;
+  border-radius: 20px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+}
+
+.top-im img:nth-child(2){
+  width: 100%;
+  border-radius: 10px;
+}
+
+.view-p{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 99%;
+  border-radius: 10px;
+}
+
+.view{
+  visibility: hidden;
+}
+
+.view-p:hover{
+  background-color: hsla(178, 100%, 50%, 0.522);
+  cursor: pointer;
+}
+
+.view-p:hover .view{
+  visibility: visible;
+}
+
+.relative{
+  position: relative;
+}
+
+.title{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.title:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.text{
+  color: hsl(215, 51%, 70%);
+}
+
+hr{
+  border:solid 1.5px hsl(215, 32%, 27%);
+}
+
+.title,strong{
+  color: white;
+}
+
+.eth{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.eth .days:nth-child(2){
+  display: flex;
+  gap: 10px;
+  color: hsl(215, 51%, 70%);
+}
+
+.eth .days:nth-child(2):hover,strong:hover{
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.eth .days:nth-child(1){
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  color: hsl(178, 100%, 50%);
+}
+
+.days:nth-child(2) img{
+  width: 20px;
+  height: 20px;
+}
+
+.avatar{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.avatar img{
+  width: 30px;
+  border: solid white 1px;
+  border-radius: 50%;
+
+}
+
+.bottom{
+  color: hsl(215, 51%, 70%);
+}
